@@ -1,0 +1,95 @@
+\documentclass[12pt,a4paper,english]{article}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage[a4paper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[OT2,T1]{fontenc}
+\usepackage{babel}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{color}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage[all]{xy}
+\usepackage{tikz-cd}
+\usepackage{enumitem}
+\usepackage{calrsfs}
+\usepackage{mathtools}
+\usepackage{natbib}
+\usepackage{hyperref}[colorlinks=true]
+\usepackage{tabularx}
+
+\geometry{top=3cm,bottom=3cm,left=2.5cm,right=2.5cm}
+\setlength\parindent{0pt}
+\renewcommand{\baselinestretch}{1.3}
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+% definition of the restriction symbol (use \restr{f}{U})
+\newcommand\restr[2]{{
+  \left.\kern-\nulldelimiterspace
+  #1
+  \vphantom{\big|}
+  \right|_{#2}
+}}
+
+
+% definition of operators
+\DeclareMathOperator{\Hom}{\normalfont{Hom}}
+\DeclareMathOperator{\Spec}{\normalfont{Spec}}
+\DeclareMathOperator{\Specmax}{\normalfont{Spec}_{max}}
+\DeclareMathOperator{\Gal}{\normalfont{Gal}}
+\DeclareMathOperator{\Proj}{\normalfont{Proj}}
+\DeclareMathOperator{\hgt}{\normalfont{ht}}
+\DeclareMathOperator{\coht}{\normalfont{coht}}
+\DeclareMathOperator{\Frac}{\normalfont{Frac}}
+
+
+% definition of categories
+\newcommand{\catname}[1]{{\normalfont\textbf{#1}}}
+\DeclareMathOperator{\Sch}{\catname{Sch}}
+\DeclareMathOperator{\Schaff}{\catname{Sch}_{aff}}
+\DeclareMathOperator{\Ring}{\catname{Ring}}
+\DeclareMathOperator{\Grp}{\catname{Grp}}
+\DeclareMathOperator{\Top}{\catname{Top}}
+\DeclareMathOperator{\Set}{\catname{Set}}
+\newcommand{\Mod}[1]{#1{\catname{-Mod}}}
+
+% definition of the "structure"
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{coro}[thm]{Corollary}
+\theoremstyle{definition}
+\newtheorem{defi}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{cla}[thm]{Claim}
+
+% symbols for direct and projective limits
+%\varinjlim
+%\varprojlim
+\title{Project description}
+\author{Deng Zhiyuan}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+Quantum theory has deep connection with number theory or representation theory in many concrete ways.
+
+During my thesis, we used Weil representation, which has very direct connection with quantum theory. And on the other side, for example, physicist used representation theory to prove the classification of quark. Representation theory is essential for mathematics on any possible angel. 
+
+On the side of number theory, my master thesis is to construct a more conceptual understanding of Godement-jacquet zeta integral and Jacquet-Langlands zeta integral, which used weil representation and Monodial structure. The first part of my master thesis has been uploaded in the section of publication. And for next step, there is the method from Prof.Yiannis Sakellaridis to construct much more general equivalence of zeta integrals by generalizing Langlands program to more general representations arising as "quantizations" of suitable Hamiltonian spaces, which can be a very powerful tool to deal with many number theory problems. And on the other side, based on the research of $L$-functions, we can have better ideas to design quantum algorithms. There are better understood Zeta functions
+with finite spectra for which the Riemann
+conjecture has been proven. We want to establish a spectral
+interpretation of these zeroes, using some
+ideas from quantum computation from the ideas of Prof. Van Dam.
+
+
+
+\end{document}
